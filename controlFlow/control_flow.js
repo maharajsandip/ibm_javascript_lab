@@ -40,36 +40,46 @@
 //  step 4
 //  ----------------------------------------
 
-let userType = "subscriber";
-let userCategory;
+// let userType = "subscriber";
+// let userCategory;
 
-switch (userType) {
-    case "admin":
-        userCategory = "Adminstrator";
-        break;
-    case "manager":
-        userCategory = "Manager";
-        break;
-    case "subscriber":
-        userCategory = "Subscriber";
-        break;
-    default:
-        userCategory = "Unknown";
-}
+// switch (userType) {
+//     case "admin":
+//         userCategory = "Adminstrator";
+//         break;
+//     case "manager":
+//         userCategory = "Manager";
+//         break;
+//     case "subscriber":
+//         userCategory = "Subscriber";
+//         break;
+//     default:
+//         userCategory = "Unknown";
+// }
 
-console.log("User Category:", userCategory);
+// console.log("User Category:", userCategory);
 
 //  ----------------------------------------
 //  step 5
 //  ----------------------------------------
 
+let isAuthenticated = true;
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 //  ----------------------------------------
 //  step 6
 //  ----------------------------------------
 
+// git add --a
+// git config --global user.email "you@example.com"
+// git config --global user.name "Your Name"
+// git commit -m "message"
+// git push origin
 
 
 //  ----------------------------------------
 //  Practice
 //  ----------------------------------------
+
