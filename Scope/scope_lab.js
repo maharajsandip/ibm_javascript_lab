@@ -61,7 +61,7 @@ full_name_var = 'Sandip N Maharaj';
 console.log("full_name_var changed outside its block scope");
 
 fname_let = 'Sandeep'; // should throu error but it is not
-console.log("fname_let changed outside its block scope");
+console.log("fname_let can not be changed outside its block scope");
 
 lname_const = 'Maharaja';
-console.log("lname_const changed outside its block scope");
+console.log("lname_const can not be changed at all since its a constant");
