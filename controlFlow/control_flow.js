@@ -40,7 +40,24 @@
 //  step 4
 //  ----------------------------------------
 
+let userType = "subscriber";
+let userCategory;
 
+switch (userType) {
+    case "admin":
+        userCategory = "Adminstrator";
+        break;
+    case "manager":
+        userCategory = "Manager";
+        break;
+    case "subscriber":
+        userCategory = "Subscriber";
+        break;
+    default:
+        userCategory = "Unknown";
+}
+
+console.log("User Category:", userCategory);
 
 //  ----------------------------------------
 //  step 5
@@ -50,6 +67,8 @@
 //  ----------------------------------------
 //  step 6
 //  ----------------------------------------
+
+
 
 //  ----------------------------------------
 //  Practice
