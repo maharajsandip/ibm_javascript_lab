@@ -20,18 +20,26 @@ function calculateTotalSalaries() {
 
 function displayHREmployees() {
     const hrEmployees = employees.filter(employee => employee.department === 'HR');
-     const hrEmployeesDisplay = hrEmployees.map((employee, index) => `<p>${employee.id}: ${employee.name}: ${employee.name} - ${employee.department} - $${employee.salary}</p>`).join('');
-     document.getElementById('employeesDetails').innerHTML = hrEmployeesDisplay;
+    const hrEmployeesDisplay = hrEmployees.map((employee, index) => `<p>${employee.id}: ${employee.name}: ${employee.name} - ${employee.department} - $${employee.salary}</p>`).join('');
+    document.getElementById('employeesDetails').innerHTML = hrEmployeesDisplay;
 }
 
 function findEmployeeById(employeeId) {
     const foundEmployee = employees.find(employee => employee.id === employeeId);
     if (foundEmployee) {
-    document.getElementById('employeesDetails').innerHTML =`<p>${foundEmployee.id}: ${foundEmployee.name}: ${foundEmployee.name} - ${foundEmployee.department} - $${foundEmployee.salary}</p>`;
+        document.getElementById('employeesDetails').innerHTML =`<p>${foundEmployee.id}: ${foundEmployee.name}: ${foundEmployee.name} - ${foundEmployee.department} - $${foundEmployee.salary}</p>`;
     }
     else{
-      document.getElementById('employeesDetails').innerHTML = 'no employee has been found with this ID';
-     }
+        document.getElementById('employeesDetails').innerHTML = 'no employee has been found with this ID';
+    }
  }
 
- 
+//  ------------------------------------------
+// Practice
+//  ------------------------------------------
+
+function findBySpecialization() {
+    const byJavascript_employees = employees.filter(e => e.specialization == 'Javascript');
+    const byJavascript_display = byJavascript_employees.map(e => `<p>${e.id}: ${e.name} - ${e.specialization}</p>`).join(' ');
+    document.getElementById('employeesDetails').innerHTML = byJavascript_display;
+}
