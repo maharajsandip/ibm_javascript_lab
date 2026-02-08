@@ -82,4 +82,20 @@ console.log("Authentication Status:", authenticationStatus);
 //  ----------------------------------------
 //  Practice
 //  ----------------------------------------
+let membershipType = "Employee";
+
+switch (membershipType) {
+    case "Employee":
+        console.log("Full  access to Dietary services only");
+        break;
+    case "Enrolled Member":
+        console.log("Full access to Dietary services and One-on-one consultation");
+        break;
+    case "Subscriber":
+        console.log("Partial access to Dietary services");
+        break;
+    case "Non-Subscriber":
+        console.log("Enroll/Subscribe fpr access");
+        break;
+}
 
