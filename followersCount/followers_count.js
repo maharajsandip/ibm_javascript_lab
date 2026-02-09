@@ -23,3 +23,12 @@ function checkCountValue() {
         alert("You gained 20 followers.");
     }
 }
+
+//  ----------------------------------------
+//  practice
+//  ----------------------------------------
+function resetCount() {
+    count = 0;
+    displayCount();
+    alert("Followers have been reset to 0;");
+}
