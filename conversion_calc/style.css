@@ -1,0 +1,51 @@
+/* sets the margin of all the element to 10px on all sides and the background-color to black */
+body{
+    margin: 10px;
+	background-color: black;
+}
+
+/* Home section  which has the app name and nav bar. The styling is applied by id */
+
+#home {
+    background-color:  #483355;
+    padding-bottom: 1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+   }
+
+/* Application name inside the home section. The styling is applied by tag name */
+
+  header {
+    font-size: 30px;
+    color: rgb(240, 234, 245);
+    float: left;
+    padding-left: 2cm;
+  }
+
+/* Navigation Bar Container*/
+
+  .topdiv {
+    float: right;
+    padding-right: 1cm;
+  }
+  
+/* Navigation Bar Buttons */
+  .topmenu {
+    color: lightgray;
+    background-color:   #483355;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration:none;
+    border-radius: 1mm;
+  }
+  
+  .topmenu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: #382742;
+    text-decoration: underline;
+  }
