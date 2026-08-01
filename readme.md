@@ -1,6 +1,6 @@
 # GitHub SSH Key Setup Cheat Sheet
 
-Step           Command / Action                                     Description
+Step           Command / Action                                        Description
 -------------- ----------------------------------------------------     ------------------------------------------------------------
 1. Generate    ssh-keygen -t ed25519 -C "maharaj_sandip@berkeley.edu"    Creates a new SSH key. Press Enter twice to accept
    Key                                                                   defaults for file location and passphrase.
