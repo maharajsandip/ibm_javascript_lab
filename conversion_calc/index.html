@@ -10,16 +10,18 @@
     <section id="home">
         <header><b>Unit Conversions</b></header>
         <nav>
-            <a href="#temperature"><button>Temperature</button></a>
-            <a href="#weight"><button>Weight</button></a>
-            <a href="#distance"><button>Distance</button></a>
+            <div class="topdiv">
+                <a href="#temperature" class="topmenu"><button>Temperature</button></a>
+                <a href="#weight" class="topmenu"><button>Weight</button></a>
+                <a href="#distance" class="topmenu"><button>Distance</button></a>
+            </div>
         </nav>
     </section>
 
-    <div id="all-conversion-sections">
+    <div id="all-conversion-sections" >
         <!-- This will have the conversion sections for Temperature, Weight, and Distance -->
       
-        <section id="temperature">
+        <section id="temperature" class="b temperature">
             <div id="tmp">
                 <figure>
                     <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px"/>
@@ -47,7 +49,7 @@
 
         <section id="weight">
             <!-- Weight conversion section -->
-            <div id="wgt">
+            <div id="weight" class="b weight">
                 <figure>
                     <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
                     <figcaption>Kilogram to Pound Conversion</figcaption>
@@ -73,7 +75,7 @@
             </div>
         </section>
 
-        <section id="distance">
+        <section id="distance" class="b distance">
             <!-- Distance conversion section -->
             <div id="dst">
                 <figure>
@@ -103,7 +105,7 @@
 
     </div>
 
-    <div id="go-home">
+    <div id="go-home" class="iconbutton">
         <a href="#home">
             <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
         </a>
