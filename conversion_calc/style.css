@@ -5,7 +5,6 @@ body {
 }
 
 /* Home section  which has the app name and nav bar. The styling is applied by id */
-
 #home {
     background-color:  #8d10da;
     padding-bottom: 1cm;
@@ -14,26 +13,24 @@ body {
     margin-top:-1cm;
     padding-top: 2cm;
     padding-bottom: 2cm;
-   }
+}
 
 /* Application name inside the home section. The styling is applied by tag name */
-
-  header {
+header {
     font-size: 30px;
     color: rgb(240, 234, 245);
     float: left;
     padding-left: 2cm;
-  }
+}
 
 /* Navigation Bar Container*/
-
-  .topdiv {
+.topdiv {
     float: right;
-    padding-right: 1cm;
-  }
+    padding-right: 1cm;  
+}
   
 /* Navigation Bar Buttons */
-  .topmenu {
+.topmenu {
     color: lightgray;
     background-color:   #483355;
     margin: 10px;
@@ -41,29 +38,30 @@ body {
     font-size: 20px;
     text-decoration:none;
     border-radius: 1mm;
-  }
+}
   
-  .topmenu:hover {
+.topmenu:hover {
     color: white;
     font-weight: bolder;
     background-color: #382742;
     text-decoration: underline;
-  }
+}
   
 /* Container for all the three conversion calculator sections   */
-#all-conversion-sections{
+#all-conversion-sections {
     display: grid;
     justify-content: center;
 }
 
 figure {
     float:left; 
-    justify-self: auto; 
+    justify-self: left; 
     width:200px
 }
 
 img {
     width: 200px;
+    height: 200px;
 }
 
 figcaption {
@@ -92,11 +90,13 @@ button:hover {
     background-color: white;
     border-top-width: 20px;
     width: 600px;
-    height: 400px;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 25px;
     margin-top: 25px;
     display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
 }
 
 .temperature {
@@ -129,7 +129,7 @@ legend {
     position: fixed;
     bottom:40px;
     left:0;
-    }
+}
 
 .iconbutton img {
     width:30px
@@ -138,4 +138,17 @@ legend {
 footer {
     background-color:rgb(240, 234, 245);
     margin-top: 20px;
+}
+
+/* Bottom row wrapper for the aside */
+.card-aside {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-top: 1px solid #eee; /* Optional light separator line */
+}
+
+.card-aside aside {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
 }
